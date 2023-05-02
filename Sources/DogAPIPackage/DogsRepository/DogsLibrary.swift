@@ -12,7 +12,7 @@ public struct LibraryModel: Identifiable {
     public let url: String
 }
 
-public final class DogsLibrary: ObservableObject {
+public final class DogsLibrary {
     private var models: [LibraryModel]
     private let apiClient: ApiClientProtocol
     private var currentIndex: Int = .zero
