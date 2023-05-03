@@ -36,10 +36,11 @@ public final class DogsLibrary {
     }
     
     public func getNextImage() async throws -> LibraryModel {
-        if currentIndex == models.endIndex {
+        let lastIndex = models.indices.last ?? .zero
+        if currentIndex == lastIndex {
             let newImage = try await getImage()
             models.append(newImage)
-            currentIndex = models.endIndex
+            currentIndex = models.indices.last ?? .zero
             return newImage
         } else {
             currentIndex += 1
