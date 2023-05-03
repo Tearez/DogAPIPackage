@@ -1,7 +1,7 @@
-DogsLibrary README
+DogAPIPackage README
 ==================
 
-DogsLibrary is a library for fetching dog images from an API. This README provides an overview of how to use the public methods described in the code.
+DogAPIPackage is a library for fetching dog images from an API. This README provides an overview of how to use the public methods described in the code.
 
 
 Instalation
