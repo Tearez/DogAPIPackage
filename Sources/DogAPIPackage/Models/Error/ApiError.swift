@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct ApiError: Error {
-    public let message: String
+struct ApiError: Error {
+    let message: String
 }
 
 extension ApiError {

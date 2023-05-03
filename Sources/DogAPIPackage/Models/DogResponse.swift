@@ -8,6 +8,6 @@
 import Foundation
 
 struct DogResponse: Decodable {
-    public let message: String
-    public let status: String
+    let message: String
+    let status: String
 }
