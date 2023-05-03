@@ -50,7 +50,7 @@ public final class DogsLibrary {
     
     public func getPreviousImage() async throws -> LibraryModel? {
         if models.isEmpty || currentIndex == models.startIndex {
-            return nil
+            return models.first
         } else {
             currentIndex -= 1
             return models[currentIndex]
