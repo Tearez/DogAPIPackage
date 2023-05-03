@@ -22,6 +22,11 @@ public final class DogsLibrary {
         self.apiClient = ApiClient()
     }
     
+    init(apiClient: ApiClientProtocol) {
+        self.models = []
+        self.apiClient = apiClient
+    }
+    
     public func getImage() async throws -> LibraryModel {
         let response: DogResponse = try await apiClient.executeRequest(.get, at: [.random])
         let model = LibraryModel(url: response.message)
