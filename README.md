@@ -20,7 +20,7 @@ To use DogsLibrary in your project, first import it:
 
 swiftCopy code
 
-`import DogsLibrary`
+`import DogAPIPackage`
 
 ### Initialization
 
